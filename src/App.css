@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  ---Orange--: hsl(26, 100%, 55%);
+  ---Paleorange--: hsl(25, 100%, 94%);
+  ---Verydarkblue--: hsl(220, 13%, 13%);
+  ---Darkgrayishblue--: hsl(219, 9%, 45%);
+  --Grayishblue--: hsl(220, 14%, 75%);
+  ---Lightgrayishblue--: hsl(223, 64%, 98%);
+  ---White--: hsl(0, 0%, 100%);
+  ---Black--: hsl(0, 0%, 0%);
+  /* - Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%) */
+}
+
+body {
+  margin: 0 2rem 0 2rem;
+  font-family: "Kumbh Sans", sans-serif;
+  position: relative;
+}
+
+/* NAVBAR */
+.navbar {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--Grayishblue--);
+  padding-bottom: 30px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  font-weight: 400;
+  gap: 25px;
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+  color: var(---Darkgrayishblue--);
+}
+
+.user-image-pic {
+  width: 40px;
+  cursor: pointer;
+}
+
+.user-image-pic:hover {
+  border: 2px solid var(---Orange--);
+  border-radius: 20px;
+}
+
+.checkout {
+  display: none;
+  width: 280px;
+  height: 200px;
+  background-color: var(---White--);
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.checkout.active {
+  display: block;
+}
+
+.cart-details {
+  margin-top: 10px;
+  padding-top: 10px;
+  /* padding-top: 30px; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(---Darkgrayishblue--);
+  border-top: 1px solid var(--Grayishblue--);
+  /* justify-content: space-evenly; */
+}
+
+.cart-details > p {
+  font-size: 16px;
+}
+
+.checkout-image {
+  width: 20%;
+  border-radius: 10%;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.checkout-items {
+  font-size: 14px;
+}
+
+span {
+  font-weight: 700;
+  color: var(---Black--);
+}
+
+.delete {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.payment {
+  margin-top: 20px;
+  width: 260px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(---Orange--);
+  border: none;
+  color: var(---White--);
+  cursor: pointer;
+}
+/* THE BODY */
+.sneakers-body {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.main-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.details {
+  width: 30rem;
+}
